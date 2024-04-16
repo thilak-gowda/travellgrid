@@ -1,0 +1,178 @@
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #560003c2;
+    padding: 2%;
+}
+
+.bg-img {
+    background: url('./icons/background.jpg');
+    background-size: 100% 100%;
+    padding: 2% 0%;
+    background-repeat: no-repeat;
+}
+
+.main-dropd,
+.top-input {
+    padding: 5px;
+    height: 35px;
+}
+
+
+.tab-container {
+    position: relative;
+    margin-top: 5%;
+}
+
+.tab {
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: -7%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #faa61a;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* margin-top: -2%; */
+    border: 1px solid #ccc;
+    border-top: none;
+    min-height: 70vh;
+    padding: 5% 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px grey;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {
+    color: red;
+}
+
+.tab button.active {
+    margin: 1%;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+.tab button:hover {
+    margin: 1%;
+    border-radius: 20px;
+    transition: 0.3s;
+
+}
+
+.icon-img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+.input-container {
+    position: relative;
+    /* margin-bottom: 25px; */
+}
+
+.input-container select {
+
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%) !important;
+    font-size: 16px;
+    color: #fff;
+    pointer-event: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input, select ,textarea {
+    border: 0;
+    /* border-bottom: 1px solid #555; */
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e74c3c;
+}
+
+.btn {
+    color: black;
+    background-color: #e74c3c;
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -3px;
+    font-size: 14px;
+    background-color: #ebebeb;
+    font-weight: 500;
+
+}
+
+
+.input-container label {
+    color: black !important;
+}
